@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 28px;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(218, 23%, 16%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main div.advice-card {
+    position: relative;
+    background-color: hsl(217, 19%, 24%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    max-width: 460px;
+    text-align: center;
+}
+
+main div.advice-card h1 {
+    font-size: 0.4rem;
+    margin: 40px 30px 30px;
+    color: hsl(150, 100%, 66%);
+    letter-spacing: 5px;
+    font-weight: normal;
+}
+
+main div.advice-card span {
+    font-size: 0.4rem;
+    margin: 40px 0 30px;
+    color: hsl(150, 100%, 66%);
+    letter-spacing: 5px;
+    font-weight: normal;
+}
+main div.advice-card p {
+    color: hsl(193, 38%, 86%);
+    margin: 0 30px 35px;
+}
+
+main div.advice-card picture {
+    margin-bottom: 50px;
+}
+
+main div.advice-card div#dice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(150, 100%, 66%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -25px;
+}
+
+main div.advice-card div#dice:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 20px 4px hsl(150deg 100% 66%);
+}
